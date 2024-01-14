@@ -10,4 +10,5 @@ A template for developers to use Docker as a PHP development environment, includ
 
 ### Developing
 Developing in this environment is easy. A ./workspace volume will be mounted. You can place your PHP files there.  
-Files such as images can be put here as well. For example, ./workspaces/images/image.png would be accessible at http://localhost:8080/images/image.png.
+By default the entrypoint is `index.php`.  
+Files such as images can be put here as well. For example, ./workspaces/images/image.png would be accessible at http://localhost:8080/images/image.png.  
