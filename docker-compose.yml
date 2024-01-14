@@ -1,0 +1,17 @@
+services:
+  webserver:
+    container_name: webserver
+    image: nginx:latest
+    ports:
+      - 8080:80
+    volumes:
+      - ./nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf
+      - ./workspace:/var/www/html
+
+  php-xdebug:
+    container_name: php-xdebug
+    build: ./php/
+    expose:
+      - 9000
+    volumes:
+      - ./workspace:/var/www/html

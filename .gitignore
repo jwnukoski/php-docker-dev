@@ -1,0 +1,3 @@
+./php/conf.d/xdebug.ini
+./php/conf.d/error_reporting.ini
+./nginx/conf.d/default.conf
