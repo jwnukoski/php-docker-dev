@@ -1,6 +1,11 @@
 # PHP Docker Development
-A template for developers to use Docker as a PHP development environment with VSCode.  
-XCode is setup within the PHP container for step debugging.  
+A Docker template for PHP developers.    
+
+1. A PHP container with defaults to run XCode step debugging with VSCode. The PHP also comes with composer installed for managing packages.
+2. NGINX to serve PHP files.
+3. A workspace folder volume is created so you can work on php files locally.
+
+This can be very useful if you don't want to install or manage PHP setups directly on your machine.
 
 ## Setup
 1. Copy ./php/conf.d/example-xdebug.ini to ./nginx/conf.d/xdebug.ini
