@@ -3,3 +3,5 @@ php/conf.d/error_reporting.ini
 nginx/conf.d/default.conf
 .env
 workspace
+php/php.ini
+.vscode
